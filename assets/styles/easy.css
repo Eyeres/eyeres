@@ -359,6 +359,16 @@ a.buttonlink {
 
 /* Components */
 
+.required::before {
+    content: '*';
+    color: red;
+    font-size: 0.85em;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    font-weight: bold;
+}
+
 .easytoggle input {
     opacity: 0;
     width: 0;

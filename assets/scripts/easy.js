@@ -262,10 +262,10 @@ function setupEasyJS() {
     });
     fiminner.css({
       'position': 'fixed',
-      'top': '30px',
+      'top': '110px',
       'left': '30px',
       'bottom': '30px',
-      'right': '110px'
+      'right': '30px'
     });
     fimouter.append(fiminner);
     fimouter.append(fimcloser);
