@@ -189,6 +189,14 @@ function setupEasyJS() {
     $(this).attr('value', $(this).val());
   });
 
+  $('.easyinput input[value=""] + .placeholder').on('click', function(){
+    $(this).parent().find('input').focus();
+  });
+
+  $('.easytextarea textarea[value=""] + .placeholder').on('click', function(){
+    $(this).parent().find('textarea').focus();
+  });
+
   $('.easyinput .show').on('click', function () {
     var inputEle = $(this).parent().find('input');
     inputEle.focus();
@@ -199,7 +207,7 @@ function setupEasyJS() {
     }
   });
 
-  $(document).mouseup(function (e) {
+/*  $(document).mouseup(function (e) {
     e.stopPropagation();
     e.stopImmediatePropagation();
     var activeSel = $('.dismiss').parent().find('.select');
@@ -235,7 +243,7 @@ function setupEasyJS() {
       $('.dismiss').hide();
       $('.dismiss').removeClass('dismiss');
     }
-  });
+  }); */
 
   $('.easyFullImage').on('click', function () {
     var fimouter = $("<div id='fim-outer'></div>");
