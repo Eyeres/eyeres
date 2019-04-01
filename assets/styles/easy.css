@@ -493,6 +493,16 @@ a.buttonlink {
     left: 5px;
     transition: all 0.3s ease;
     transform-origin: center left;
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
 }
 
 .easyinput input+.placeholder+.show {
@@ -796,27 +806,33 @@ a.buttonlink {
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
     /* Styles */
     body {
         font-size: 1em;
         line-height: 1.25em;
     }
+
     h1 {
         font-size: 2em;
         line-height: 1.25em;
     }
+
     h2 {
         font-size: 1.625em;
         line-height: 1.15384615em;
     }
+
     h3 {
         font-size: 1.375em;
         line-height: 1.13636364em;
     }
+
     h4 {
         font-size: 1.125em;
         line-height: 1.11111111em;
     }
+
     blockquote {
         font-size: 1.25em;
         line-height: 1.25em;
@@ -974,22 +990,27 @@ a.buttonlink {
         font-size: 12pt;
         line-height: 1.25em;
     }
+
     h1 {
         font-size: 36pt;
         line-height: 1.25em;
     }
+
     h2 {
         font-size: 24pt;
         line-height: 1.25em;
     }
+
     h3 {
         font-size: 18pt;
         line-height: 1.25em;
     }
+
     h4 {
         font-size: 14pt;
         line-height: 1.25em;
     }
+
     blockquote {
         font-size: 24pt;
         line-height: 1.45833333em;
